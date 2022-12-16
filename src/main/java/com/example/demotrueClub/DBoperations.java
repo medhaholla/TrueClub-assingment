@@ -18,4 +18,16 @@ public class DBoperations {
         }
         return connection;
     }
+    public static void closeConnection() throws SQLException {
+        if(connection != null){
+            synchronized (DBoperations.class){
+                if(connection != null) {
+                    connection.close();
+                }
+            }
+        }
+
+    }
+
 }
+
