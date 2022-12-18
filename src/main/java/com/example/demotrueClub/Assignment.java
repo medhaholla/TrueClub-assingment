@@ -57,4 +57,11 @@ public class Assignment {
     public void setRow_creation_timestamp(Timestamp row_creation_timestamp) {
         this.row_creation_timestamp = row_creation_timestamp;
     }
+
+    public Assignment (String name, int pincode, String address,String state) {
+        this.name = name;
+        this.address = address;
+        this.pincode = pincode;
+        this.state = state;
+    }
 }
